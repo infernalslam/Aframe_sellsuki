@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="app.js"></script>
+    <meta charset="utf-8">
+    <title>Animations: Generic Logo</title>
+    <meta name="description" content="Animations: Generic Logo - A-Frame">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.2.0/aframe.js"></script>
+  </head>
+  <body ng-controller="TodoListController as app">
+      <a-scene>
+          <a-assets>
+            <img id="my-image" src="sellsuki.png">
+          </a-assets>
+          <a-image src="#my-image" width="10" height="3"></a-image>
+            <a-entity position="1 1.8 5">
+              <a-camera></a-camera>
+            </a-entity>
+    </a-scene>  
+  </body>
+</html>
